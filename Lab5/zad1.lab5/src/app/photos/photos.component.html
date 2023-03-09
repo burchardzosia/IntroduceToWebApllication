@@ -1,0 +1,14 @@
+
+<div   *ngFor="let photo of photos">
+        <div class="photo">
+            <div>Id zdjęcie: {{photo.id}}</div>
+            <div>Tytuł zdjęcia: {{photo.title}}</div>
+            <img src={{photo.thumbnailUrl}} alt="">
+        </div>
+        <a routerLink="/photos/{{photo.id}}">Zoom</a>
+        
+        
+
+</div>
+
+ 

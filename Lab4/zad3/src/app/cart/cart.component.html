@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="header">Witaj W koszyku:</div>
+    <div class="value"> Wartość koszyka:{{this.TripService.sum}}$</div>
+    <div class="header">Lista zarezerwowamych wycieczek:</div>
+    <div *ngFor="let cartposition of cart">
+    <div>
+        {{cartposition.trip.name | uppercase}}
+        ilość:
+        {{cartposition.number}}
+    </div>
+    <div>
+
+</div>
+
+

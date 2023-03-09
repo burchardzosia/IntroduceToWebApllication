@@ -1,0 +1,13 @@
+<app-cart></app-cart>
+<div [ngClass]="{
+    'info_trip': licz <10,
+    'info_trip2': licz >=10
+  }" class="info_trip">Zarezerwowano {{licz}} wycieczki</div>
+<div class="container">
+    <app-trip-card *ngFor="let trip of  tripTable" [mini]="mini" [trip]="trip" (min)="low()"[maxi]="maxi" (maxi)="heigh()"  (remove)="delatetrip(trip)" (sub)="plus(trip)" (getback)="getback(trip)">  </app-trip-card >
+    
+</div>
+<app-trip-form (function)="submitEvent($event)"></app-trip-form>
+
+
+

@@ -1,0 +1,28 @@
+#eye{
+    background-image: url("images/invisible.png");
+    width:24px;
+    height: 21px;
+    position: absolute;
+    top:25px;
+    left:153px;
+}
+#eye2{
+    background-image: url("images/invisible.png");
+    width:24px;
+    height: 21px;
+    position: absolute;
+    top:65px;
+    left:153px;
+
+}
+#one,#two,#three,#four{
+    background-image: url("images/uncheck.png");
+    width:26px;
+    height: 25px;
+}
+#length,#digit,#special_character,#letter{
+    display: flex;
+    flex-direction: row;
+    margin:20px;
+    width: fit-content;
+}

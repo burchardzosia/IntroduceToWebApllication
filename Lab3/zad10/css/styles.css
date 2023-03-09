@@ -1,0 +1,25 @@
+.ball {
+    transition: transform 0.5s;
+    border-radius:50%;
+    width: 25px;
+    height: 25px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+
+  .ball_container{
+    width:500px;
+    height:400px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+  }
+  .move{
+    padding: 10px;
+    position: absolute;
+    width:500px;
+    height:400px;
+  }

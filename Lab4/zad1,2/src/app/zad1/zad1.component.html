@@ -1,0 +1,35 @@
+<div class="container">
+  <p>Stwórz swoje auto</p>
+  <p>Wybierz jedną z marek:</p>
+  <select [(ngModel)]="Company" (ngModelChange)="showModelsTable()">
+    <ng-container *ngIf="CompaniesFlag" >
+      <option disabled selected></option>
+      <option *ngFor="let item of carArray | keyvalue">
+        {{ item.key }}
+      </option>
+    </ng-container>
+  </select>
+  <p>Wybierz jeden z modeli:</p>
+  <select [(ngModel)]="Model" (ngModelChange)="showColorsTable()">
+    <ng-container *ngIf="ModelFlag">
+      <option disabled selected></option>
+      <option *ngFor="let model of carArray[Company] | keyvalue">
+
+        {{ model.key }}
+      </option>
+    </ng-container>
+  </select>
+  <p>Wybierz jeden z kolorów:</p>
+  <select [(ngModel)]="Color" (ngModelChange)="showResult()"  >
+    <ng-container   *ngIf="ColorFlag">
+      <option disabled selected></option>
+      <option  *ngFor="let color of colorTable"
+      [style.background-color]="color"
+      >
+        {{color}}
+      </option>
+    </ng-container>
+  </select>
+  <p >{{result}}</p>
+
+</div>

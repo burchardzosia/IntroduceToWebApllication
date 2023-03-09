@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/plik.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+    <form action="/action_page.php">
+        <label for="new_password">New Password</label><br>
+        <input type="password" id="psw" name="new_password" required><br>
+        <label for="password">Repeat new Password</label><br>
+        <input type="password" id="psw2" name="password" required><br>
+        <div onclick="see()" id="eye"></div>
+        <div onclick="saw()" id="eye2"></div>
+    
+        
+
+    </form>
+    </div>
+
+
+ 
+
+
+    <div id="info">
+        <div id ="length">
+            <div  id="one"></div>
+            <div>at least 8 characters</div>
+        </div>
+        <div id ="special_character">
+            <div id="two"></div>
+            <div>at least one special character</div>
+        </div>
+        <div id ="letter">
+            <div id="three"></div>
+            <div>at least one capital letter</div>
+        </div>
+
+        <div id ="digit">
+            <div  id ="four"></div>
+            <div>at least one digit</div>
+        </div>
+      
+    </div>
+    
+</body>
+</html>

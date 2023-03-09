@@ -1,0 +1,42 @@
+.n1{
+    background-color: rgb(100, 149, 237);
+    width: 30%;
+    height: auto;
+    padding: 2vw;
+    text-align: center;
+    font-size: 40px;
+}
+
+.n2{
+    background-color: rgb(226, 27, 67);
+    padding: 2vw;
+    width: 80%;
+    height: auto;
+    width: auto;
+}
+
+.n3{
+    background-color: rgb(248, 248, 1);
+    width: 80%;
+    height: 200px;
+    width: auto;
+    padding-top: 4vh;
+}
+
+button{
+    width:30vw;
+    height:10vh;
+    margin: 10px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+@media (max-width: 600px){
+    button{
+        width:80vw;
+    }
+
+    .n1{
+        width: 80%;
+    }
+}

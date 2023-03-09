@@ -1,0 +1,25 @@
+{
+    "Fiat":
+        {
+            "Tipo":[["red", "green"],"Ten model ma na wyposażeniu 6 poduszek powietrznych oraz klimatyzacje"],
+            "Panda":[["red", "blue","purple"],"Ten model ma na wyposażeniu sygnał niezapięcia pasów oraz poduszki powietrzne pasażera"],
+            "Ducato":[["pink", "white"],"Ten model ma napęd 4x4 "],
+            "125":[["green", "black", "blue"],"Ten model ma 4 biegową skrzynie manualną"],
+            "Bravo":[["red", "black", "white"],"Ten model ma silnik Multijet i ABS"]
+            
+        }
+
+    ,
+    "BMW":
+    {
+        "i4":[["red", "green"],"Ten model ma silnik TwinPower Turbo oraz ogrzewanie foteli"],
+        "iX Competition":[["red", "green", "blue", "silver"],"Ten model zawiera spoiler oraz sportowe fotele"]
+        
+    },
+    "Mercedes":
+    {
+        "GLA":[["pink", "black"],"Ten model ma klimatyzację i poduszki powietrzne"],
+        "AMG GLA":[["red","yellow"],"Ten model zawiera lakierowany przedni spojler oraz chromowane na czarno nakładki rury wydechowe"],
+        "CLS":[["black"],"Ten model zawiera pakiet aerodynamiczny AMG  "]
+    }
+}

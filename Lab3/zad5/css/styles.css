@@ -1,0 +1,49 @@
+#one{
+    align-items: center;
+    background-color: rgb(71, 58, 196);
+    width:400px;
+    height:400px;
+    position: relative;
+}
+#two{
+    background-color: rgb(221, 39, 39);
+    width:200px;
+    height:200px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 25%;
+  
+}
+#three{
+    background-color: rgb(223, 226, 43);
+    position: absolute;
+    height:100px;
+    width: 100px;
+    margin-top: 0%;
+    margin-left: 25%;
+}
+#number1,#number2,#number3{  
+    margin-top: 2%;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 50%;
+}
+
+#buttom_propagation{
+    font-size: 20px;
+    text-align: left;
+}
+.text{
+    width:300px;
+    height:20px;
+   
+}
+.reset{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(38, 129, 129);
+}
+.change{
+    position: absolute;
+    top:700px;
+}

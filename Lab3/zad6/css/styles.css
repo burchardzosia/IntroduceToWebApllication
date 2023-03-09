@@ -1,0 +1,54 @@
+.content{
+    margin-left: 10%;
+    margin-top: 200px;
+
+
+   
+}
+body{
+    background-color: grey;
+}
+#form{
+    width:40%;
+    height:100px;
+}
+#fname,#telefon{
+    margin-top: 5%;
+}
+#dodaj{
+    background-color: green;
+    width:200px;
+    margin-left: 10%;
+    height:100px;
+    margin-top: 10px;
+    border-radius: 10%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    height:150px;
+
+}
+h1{
+    font-size: 20px;
+}
+.data_container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+
+}
+.bin{
+    margin-top: 10px;
+    margin-right: 10px;
+    width:60px;
+    height: 70px;
+    background-image: url("bin.png");
+    background-color: rgb(255, 255, 255);
+}

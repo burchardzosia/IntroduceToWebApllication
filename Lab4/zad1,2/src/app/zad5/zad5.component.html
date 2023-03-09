@@ -1,0 +1,35 @@
+
+<div class="container">
+    
+    <div class="result" >
+        <div class="topicResult"[innerHtml]="topicToAdd"></div>
+        <div class="resultContent"[innerHtml]="htmlToAdd"></div>
+    </div>
+    <div class="topicContainer">
+        <p class="title">Wybierz temat</p>
+        <div class="choose">
+            <div class="box">
+                <p class="topic">The Basics</p>
+                <p class="content">Cose Angular basics you have to know</p>
+                <button (click)="learnTheBasics()" >Learn More</button>
+            </div>
+    
+            <div class="box">
+                <p class="topic">Components</p>
+                <p class="content">Components are a core concept for building Angular Uls and apps</p>
+                <button (click)="learnComponents()">Learn More</button>
+            </div>
+    
+            <div class="box">
+                <p class="topic">Events</p>
+                <p class="content">Events are important in Angular</p>
+                <button (click)="learnEvents()">Learn More</button>
+            </div>
+    
+        </div>
+
+    </div>
+    
+
+</div>
+

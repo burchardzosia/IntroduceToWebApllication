@@ -1,0 +1,123 @@
+body{
+  
+    margin-top: 0;
+    margin-left: 0;
+    margin-right:0;
+    margin-bottom: 0;
+    overflow: hidden;
+    cursor: none;
+}
+  
+    
+
+.cursor{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border-color: aliceblue;
+    border-style:solid;
+    position: absolute;
+    z-index: 100;
+    background-color: transparent;
+   
+   
+ 
+}
+.insideCursor{
+    width:5px;
+    height:5px;
+    background-color: red;
+    margin-left: 22px;
+    margin-top: 20px;
+}
+.nick{
+    width:80vw;
+    height:20vw;
+
+}
+.nickForm{
+    width:300px;
+    height:70px;
+    background-color: blueviolet;
+    border: solid 2px;
+    position: absolute;
+    left:20%;
+    top:20%;
+    z-index: 200;
+    cursor: auto;
+  
+    
+    
+}
+p{
+    margin-left: 80px;
+    color: aliceblue;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+label{
+    margin-left: 4%;
+    color: beige;
+}
+.zombieArea{
+ 
+    background-image: url("images/board-bg.jpg");
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    cursor: none;
+    height: 100vh;
+    min-height: 800px;
+   
+    
+
+}
+.viewScore{
+    position: absolute;
+    left: 90%;
+    top: 5%;
+    font-size: 90px;
+    color: aliceblue;
+    display:none;
+}
+.zombie{
+    background-image: url("images/walkingdead.png");
+    width: 200px;
+    height: 316px;
+    bottom:100px;
+    left:110%;
+    position: absolute;
+    animation: zombieAnim 0.8s 0s infinite steps(3),
+                zombieWalk 10s 0s 1 linear;
+}
+
+@keyframes zombieAnim {
+    100% {
+        background-position: -1800px 0;
+    }
+}
+
+@keyframes zombieWalk {
+    100% {
+        left: -300px;
+    }
+}
+.PlayerGame{
+    position: absolute;
+    left:800px;
+    font-size: 80px;
+    margin-top: 20px;
+
+
+}
+.result{
+    position: absolute;
+    width: 320px;
+    height:150px;
+    background-color: blueviolet;
+    font-size: 50px;
+    border-radius: 20%;
+    text-align: center;
+    top:20%;
+    left:28%;
+}

@@ -1,0 +1,35 @@
+<div class="nav">
+    <div class="buttons">
+        <button class="button" routerLink="/home" >Home</button>
+        <button class="button" routerLink="/trip" >Wycieczki</button>
+        <button class="button" routerLink="/cart" >Koszyk</button>
+        <button class="button" routerLink="/form" >Dodaj</button>
+        <button class="button" routerLink="/buycard" >Kupione</button>
+        
+    </div>
+    <div class="koszyk">
+
+      
+        
+        <img  class="imageitem"src="../../assets/photos/cart.png" alt="">
+        <div class="number">{{this.serviceTrip.sum}}$</div>
+        <div class="number">Ilość</div>
+        <div class="number">{{this.serviceTrip.liczba}}</div>
+        <div class="notify">
+        <img  class="imageitem"src="../../assets/photos/avatar.png" alt="">
+        <img *ngIf="this.mem.flag2" class="imageitem"src="../../assets/photos/notify.png" alt="">
+            
+    
+        
+        
+    </div>
+  
+        
+   
+
+</div>
+
+
+
+
+

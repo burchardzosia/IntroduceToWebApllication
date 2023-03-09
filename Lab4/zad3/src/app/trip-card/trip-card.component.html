@@ -1,0 +1,41 @@
+
+
+  <div [ngClass]="{
+    'expensive': trip.price == getHeigh(),
+    'cheep': trip.price == getLow()
+  }"  class="tripCard" [ngStyle]="{
+    'background-color': trip.max-counter > 3 ? 'blue' : 'orange'
+  }">
+      <h1 *ngIf="trip.max-counter!=0">Pozostało {{trip.max-counter}} wycieczek</h1>
+      <h1 *ngIf="trip.max-counter==0">Wycieczka Wyprzedana</h1>
+      <h1></h1>
+      <div class="image">
+        <img class="image_trip" src="{{trip.image}}" alt="" srcset="">
+      </div>
+      <div class="name">{{trip.name | uppercase }}</div>
+      <div class="country"> {{trip.country | uppercase }}</div>
+      <div class="date">Termin: {{trip.startDate}}-{{trip.endDate}}</div>
+      <div class="cost">
+        <span class="prise">{{price | number: '1.0-0' }}{{mark}}</span>
+        <button class="money" (click)="change()">Change </button>
+      </div>
+      <div class="description">{{trip.description}}</div>
+      <a class="link"  href="{{trip.linkphoto}}">WIĘCEJ ZDJĘĆ</a>
+      <div class="add-remove">
+        <div class="plus" *ngIf="counter < trip.max" (click)="addToCart()">+
+        
+        </div>
+        <div *ngIf="counter!=0" class="minus" (click)="RemoveFromCart()">-</div>
+      </div>
+      <div class="opinion_container">
+       
+        <app-opinion></app-opinion>
+    </div>
+  </div>
+  <div>
+    <button class="delate" (click)="delatetrip()">Usuń Tę wyczieczkę</button>
+  </div>  
+    
+  
+    
+ 
