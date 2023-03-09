@@ -1,0 +1,56 @@
+.body{
+    height:2000px;
+}
+.container{
+    background-color: rgb(11, 97, 131);
+    background-image: url(/images/men.jpg);
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-size:auto 1200px;
+    display: flex;
+    height:1200px;
+    flex-direction: column;
+    
+  
+}
+
+.small_image{
+    margin:2%;
+    width:15%;
+    height: 80%;
+    
+    
+}
+.slider{
+    display: flex;
+    position: fixed;
+    top:80%;
+    width:10%;
+    height:10%;
+    
+}
+
+.call{
+    height:10px;
+    width:10px;
+    display: flex;
+    position: fixed;
+    top:80%;
+    width:10%;
+    height:10%;
+    gap:8%;
+    left: 42%;
+}
+@media screen and (max-width: 1000px) {
+    .small_image{
+        margin:2%;
+        width:20%;
+        height: 80%;
+        
+        
+    }
+    .call{
+        left: 30%;
+    }
+  }
+

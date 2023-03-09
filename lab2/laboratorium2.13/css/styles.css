@@ -1,0 +1,281 @@
+.container{
+    display:grid;
+    grid-template-columns: 14% 70% 14%;
+    grid-template-rows: 9vh 9vh 68vh auto 9vh;
+    gap:5px;
+    grid-template-areas:
+    "head head head"
+    "sidebar navigation ads"
+    "sidebar main ads"
+    ". main ."
+    "footer footer footer"
+
+}
+.header{
+    grid-area: head;
+    border:4px solid red;   
+}
+.sidebar{
+    border:3px solid red;
+    grid-area: sidebar;
+    display:flex;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top:15px;
+    background-color:rgba(255,255,255,1);
+    z-index:5;
+    overflow-wrap:break-word;
+    
+}
+
+.navigation{
+    grid-area: navigation;
+    border:4px solid red;
+
+}
+.main{
+  
+    grid-area: main;
+    border:4px solid red;
+
+
+}
+.ads{
+    grid-area: ads;
+    border:3px solid red;
+
+}
+.footer{
+    grid-area: footer;
+    border:3px solid red;
+    
+
+}
+.img{
+    width:100%;
+    height:40%;
+}
+
+.img2{
+    width:5vw;  
+}
+
+
+.main_container{
+    display: flex;
+    flex-direction: column;
+    height:2000px;
+}
+.wpis_container{
+    height:80%;
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(247, 253, 255, 0.5)), url("images/tepets.jpg") ; 
+    
+    
+}
+.wpis{
+    width: 60%;
+	height: 14%;
+	transform: skewX( -20deg );
+	background-color: #e9e9e9;
+	margin: 50px auto 0;
+    opacity:0.8; 
+
+}
+#container3{
+    top:41%;
+}
+#container4{
+    top:59%;
+}
+#container5{
+    top:77%;
+}
+
+
+
+
+#container2{
+    top:23%;
+
+}
+.content_container{
+    width:50%;
+    height:10%;
+    position: absolute;
+    z-index:2;
+    top:5%;
+    left:23%;
+    shape-outside: circle(50%);
+    font-size: 15px;
+    overflow: hidden;
+}
+
+
+.img3{
+ 
+    border-radius: 50%;
+    height:80%;
+    width:25%;
+    shape-outside: circle(50%);
+    float: left;
+    
+    
+  
+}
+.folmular{
+    background-image: url("images/view.jpg!d");
+    width:100%;
+    height: 50%;
+    position:relative;
+    display:flex;
+}
+.cut{
+    position:absolute;
+    height:100%;
+    z-index:0;
+    width: 60%;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 770px solid rgba(255,255,255,0.7);
+	
+   
+
+}
+.folmular_content{
+   z-index: 2;
+   position:relative;
+   display:flex;
+   flex-direction: column;
+   width:50%;
+   margin-left: 2%;
+   
+   
+}
+.wpis_text{
+    font-size: 40px;
+    color:rgb(101, 235, 101)
+}
+
+
+input[type='radio']{
+    accent-color: green;
+}
+
+
+.one_option{
+    left:5%;
+    position: absolute;
+    top:70%;
+    font-size: 25px;
+    cursor:pointer;
+   
+}
+.two_option{
+    left:5%;
+    position: absolute;
+    top:60%;
+    font-size: 25px;
+    cursor:pointer;
+
+}
+.full_name{
+    width:100%;
+    height: 50%;
+    margin-bottom: 10%;
+   
+}
+.email_adress{
+    width:100%;
+    height: 50%;
+    margin-bottom: 10%;
+  
+}
+
+.buttom{
+    top:80%;
+    left:10%;
+    position: absolute;
+    background-color: green;
+    border:solid 2px;
+    width:30%;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width:1000px){
+    .container{
+        grid-template-columns: 14% 70% 14%;
+    grid-template-rows:  10vh 10vh 70vh auto 10vh;
+    gap:5px;
+    grid-template-areas:
+    "head head head"
+    "navigation navigation navigation"
+    "sidebar main main "
+    " . main main"
+    "ads footer footer"
+
+        
+        
+    }
+    .sidebar{
+        font-size: smaller;
+    }
+    .content_container{
+        font-size: 10px;
+    }
+    .content_container2{
+        font-size: 10px;
+    }
+    
+   
+    
+}
+@media screen and (max-width:800px){
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 8vh 8vh auto 20vh 12vh 12vh;
+        grid-template-areas:
+        "head"
+        "navigation"
+        "main"
+        "ads"
+        "footer"
+    }
+    .sidebar{
+        display:flex;
+        width:97%;
+        flex-direction: column;
+        position:fixed;
+        background-color: aliceblues;
+        top:40%;
+     
+        
+    }
+    .main{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    .img{
+        display: none;
+    }
+    .img3{
+        width:20%;
+        height:20%;
+    }
+    .content_container{
+        font-size: 10px;
+    }
+    .content_container2{
+        font-size: 10px;
+    }
+    
+    
+ 
+   
+}
